@@ -95,3 +95,13 @@ table{
 table td{
  padding:0 40px;   
 }
+.paragrafo-resultado, .erro{
+    margin-top: 20px;
+    background: rgb(109,255,182);
+    padding: 10px 20px;
+    font-weight: 600;
+}
+.erro{
+    background: rgb(255, 0, 0);
+    color: #fff;
+}

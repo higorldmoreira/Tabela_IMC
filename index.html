@@ -1,84 +1,83 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Modelo</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
-    <section class="container">
-      <h1>Tabela IMC</h1>
+<head>
 
-      <p>
-        IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela
-        Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.
-      </p>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabela IMC</title>
+    <link rel="stylesheet" href="css/style.css">
 
-      <table>
+</head>
 
-        <tr class="table-title">
-          <td>IMC</td>
-          <td>Resultado</td>
-        </tr>
+<body>
+    <main>
+        <section class="container">
+            <h1>Calcule seu IMC</h1>
+            <p>
+                IMC é a sigla para Índice de Massa Corpórea, parâmetro adotado pela
+                Organização Mundial de Saúde para calcular o peso ideal de cada pessoa.
+            </p>
+            <table>
 
-        <tr>
-          <td>Resultados menores que 16</td>
-          <td>Magreza grave</td>
-        </tr>
-
-        <tr>
-          <td>Resultados entre 16 e 16,9</td>
-          <td>Magreza moderada</td>
-        </tr>
-
-        <tr>
-          <td>Resultados entre 17 e 18,5</td>
-          <td>Magreza leve</td>
-        </tr>
-
-        <tr>
-          <td>Resultados entre 18,6 e 24,9</td>
-          <td>Peso ideal</td>
-        </tr>
-
-        <tr>
-          <td>Resultados entre 25 e 29,9</td>
-          <td>Sobrepeso</td>
-        </tr>
-
-        <tr>
-          <td>Resultados entre 30 e 34,9</td>
-          <td>Obesidade grau I</td>
-        </tr>
+                <tr class="table-title">
+                  <td>IMC</td>
+                  <td>Resultado</td>
+                </tr>
         
-        <tr>
-            <td>Resultados entre 35 e 39,9</td>
-            <td>Obesidade grau II ou severa</td>
-          </tr>
-          
-        <tr>
-            <td>Resultados maiores do que 40</td>
-            <td>Obesidade grau III ou mórbida</td>
-          </tr>
+                <tr>
+                  <td>Resultados menores que 16</td>
+                  <td>Magreza grave</td>
+                </tr>
+        
+                <tr>
+                  <td>Resultados entre 16 e 16,9</td>
+                  <td>Magreza moderada</td>
+                </tr>
+        
+                <tr>
+                  <td>Resultados entre 17 e 18,5</td>
+                  <td>Magreza leve</td>
+                </tr>
+        
+                <tr>
+                  <td>Resultados entre 18,6 e 24,9</td>
+                  <td>Peso ideal</td>
+                </tr>
+        
+                <tr>
+                  <td>Resultados entre 25 e 29,9</td>
+                  <td>Sobrepeso</td>
+                </tr>
+        
+                <tr>
+                  <td>Resultados entre 30 e 34,9</td>
+                  <td>Obesidade grau I</td>
+                </tr>
+                
+                <tr>
+                    <td>Resultados entre 35 e 39,9</td>
+                    <td>Obesidade grau II ou severa</td>
+                </tr>
+                  
+                <tr>
+                    <td>Resultados maiores do que 40</td>
+                    <td>Obesidade grau III ou mórbida</td>
+                </tr>
+        
+            </table>
+            <form action="/" id="form" method="post">
+                <label for="peso">Peso</label>
+                <input type="number" id="peso" name="peso" placeholder="Peso em Kg" required="">
+                <label for="peso">Altura</label>
+                <input type="number" id="altura" name="altura" placeholder="Altura em cm" required="">
+                <button type="submit" >Enviar</button>
+            </form>
 
-      </table>
+            <div id="resultado"></div>
+        </section>
+    </main>
 
-      <form action="">
-
-        <h2>Calcule seu IMC</h2>
-        <label for="peso">Peso:</label>
-        <input type="text" id="peso" placeholder="Peso em Kg" />
-
-        <label for="altura">Altura:</label>
-        <input type="text" id="altura" placeholder="Altura em cm" />
-
-        <button>calcular</button>
-      </form>
-
-    </section>
-
-    <script src="./assets/js/main.js"></script>
-
-  </body>
+    <script src="js/main.js"></script>
+</body>
 </html>
